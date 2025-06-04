@@ -1,0 +1,42 @@
+auth_enabled: false
+
+server:
+  http_listen_port: 3100
+
+common:
+  instance_addr: 127.0.0.1
+  path_prefix: /loki
+  storage:
+    filesystem:
+      chunks_directory: /loki/chunks
+      rules_directory: /loki/rules
+  replication_factor: 1
+  ring:
+    kvstore:
+      store: inmemory
+
+limits_config:
+  max_global_streams_per_user: 0
+  max_entries_limit_per_query: 1000
+  ingestion_rate_mb: 50000
+  ingestion_burst_size_mb: 50000
+  volume_enabled: true
+  reject_old_samples: true
+  reject_old_samples_max_age: 168h
+  max_query_length: 3d # Limit query duration
+  max_query_lookback: 7d # Limit lookback period
+  retention_period: 168h
+  
+schema_config:
+  configs:
+    - from: 2020-10-24
+      store: tsdb
+      object_store: filesystem
+      schema: v13
+      index:
+        prefix: index_
+        period: 24h
+
+ruler:
+  alertmanager_url: http://localhost:9093
+

@@ -1,0 +1,103 @@
+Attaching 1 probe...
+Time: 18:19:26
+UID=1000 PID=6488 CMD=gnome-shell FILE=/bin/sh
+  ARGV[0]: /bin/sh
+  ARGV[1]: -e
+  ARGV[2]: -u
+  ARGV[3]: -c
+  ARGV[4]: export GIO_LAUNCHED_DESKTOP_FILE_PID=$$; exec "$@"
+  ARGV[5]: sh
+  ARGV[6]: gnome-terminal
+  ARGV[7]: --window
+  ARGV[8]: 
+  ARGV[9]: 
+Time: 18:19:26
+UID=1000 PID=6496 CMD=gnome-terminal- FILE=/bin/bash
+  ARGV[0]: bash
+  ARGV[1]: 
+  ARGV[2]: 
+  ARGV[3]: 
+  ARGV[4]: 
+  ARGV[5]: window-close-symbolic
+  ARGV[6]: 
+  ARGV[7]: 
+  ARGV[8]: 
+  ARGV[9]: 
+Time: 18:20:14
+UID=0 PID=6850 CMD=bash FILE=/bin/bash
+  ARGV[0]: /bin/bash
+  ARGV[1]: 
+  ARGV[2]: 
+  ARGV[3]: 
+  ARGV[4]: 
+  ARGV[5]: 
+  ARGV[6]: 
+  ARGV[7]: 
+  ARGV[8]: 
+  ARGV[9]: 
+Time: 18:22:12
+UID=0 PID=7813 CMD=runc:[2:INIT] FILE=/bin/sh
+  ARGV[0]: sh
+  ARGV[1]: -c
+  ARGV[2]: ping 8.8.8.8
+  ARGV[3]: 
+  ARGV[4]: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
+  ARGV[5]: HOSTNAME=c7ea847c1fa8
+  ARGV[6]: HOME=/root
+  ARGV[7]: 
+  ARGV[8]: 
+  ARGV[9]: 
+Time: 18:22:12
+UID=472 PID=7847 CMD=runc:[2:INIT] FILE=/bin/sh
+  ARGV[0]: sh
+  ARGV[1]: -euc
+  ARGV[2]: mkdir -p /etc/grafana/provisioning/datasources
+cat <<EOF > /etc
+  ARGV[3]: 
+  ARGV[4]: 
+  ARGV[5]: 
+  ARGV[6]: 
+  ARGV[7]: 
+  ARGV[8]: 
+  ARGV[9]: 
+
+
+Attaching 1 probe...
+Time: 18:22:49
+UID=0 PID=8371 CMD=bash FILE=/bin/bash
+  ARGV[0]: /bin/bash
+  ARGV[1]: 
+  ARGV[2]: 
+  ARGV[3]: 
+  ARGV[4]: 
+  ARGV[5]: 
+  ARGV[6]: 
+  ARGV[7]: 
+  ARGV[8]: 
+  ARGV[9]: 
+Time: 18:30:01
+UID=0 PID=8576 CMD=cron FILE=/bin/sh
+  ARGV[0]: /bin/sh
+  ARGV[1]: -c
+  ARGV[2]: [ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; 
+  ARGV[3]: 
+  ARGV[4]: 
+  ARGV[5]: 
+  ARGV[6]: ú‘“/ó]
+  ARGV[7]: 
+  ARGV[8]: LOGNAME
+  ARGV[9]: LOGNAME=root
+Time: 19:17:01
+UID=0 PID=9096 CMD=cron FILE=/bin/sh
+  ARGV[0]: /bin/sh
+  ARGV[1]: -c
+  ARGV[2]:    cd / && run-parts --report /etc/cron.hourly
+  ARGV[3]: 
+  ARGV[4]: 
+  ARGV[5]: 
+  ARGV[6]: ú‘“/ó]
+  ARGV[7]: 
+  ARGV[8]: LOGNAME
+  ARGV[9]: LOGNAME=root
+
+

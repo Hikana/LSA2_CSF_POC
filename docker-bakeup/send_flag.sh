@@ -1,0 +1,1 @@
+touch dns_request | scp ./dns_request dnsserver@10.107.36.66:/home/dnsserver

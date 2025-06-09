@@ -65,12 +65,12 @@ sudo docker-compose up --build -d
 
 ## 🎯 題目設計說明
 ### 題目目標：
-參賽者需利用 SQLi 登入管理介面，繞過目錄限制讀取敏感檔案，取得帳號密碼，並上傳 Webshell 進行 RCE，最終找到並讀取 FLAG。
+參賽者需利用 SQLi 登入管理介面，繞過目錄限制讀取敏感檔案，取得帳號密碼，並上傳 Webshell 進行 RCE，最終找到並讀取 FLAG。<br>
 
 ### 題目特色
-模擬真實滲透流程
-多層次攻擊：SQLi → Local File Inclusion → Reverse Shell → 提權
-內建監控系統，記錄參賽者操作行為方便回顧與教學
+模擬真實滲透流程<br>
+多層次攻擊：SQLi → Local File Inclusion → Reverse Shell → 提權 <br>
+內建監控系統，記錄參賽者操作行為方便回顧與教學<br>
 
 ## 監控系統介紹
 

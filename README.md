@@ -119,6 +119,13 @@ Prometheus : 擔任容器環境中的 metric 收集器，定期抓取系統指�
 最終結構
 ![image](https://github.com/user-attachments/assets/bc8e6e4a-930b-4da2-af9e-2690c2c03746)
 
+參考資料:
+https://csrc.nist.gov/publications/sp800
+https://grafana.com/
+https://www.ithome.com.tw/news/102969
+https://hackmd.io/@sysprog/linux-ebpf
+https://chatgpt.com/
+
 our hackmd:
 https://hackmd.io/@fa7xzzT4TOexBrduqy6tgQ/SJIFz7nGle
 
